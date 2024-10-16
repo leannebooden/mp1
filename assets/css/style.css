@@ -1,0 +1,32 @@
+
+/*----------------- Colors */
+.bg-color-navbar {
+    background-color: #2e4b36;
+}
+
+/*----------------- Heading */
+
+
+/*----------------- Navbar */
+.navcontainer {
+    float: left;
+    padding: 50px 50px 50px 300px;
+}
+
+#nav li {
+    font-size: 25px;
+    padding: 0px 100px 0px 0px;
+}
+
+#nav li a {
+    color: #e6e3d3;
+    text-decoration: none;
+}
+
+/*----------------- Hero Image */
+
+
+/*----------------- Footer */
+
+
+/*----------------- Unused Classes and ID */
