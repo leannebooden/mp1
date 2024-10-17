@@ -1,10 +1,12 @@
 /*removes default browser padding and margins */
+
 body {
     margin: 0;
     padding: 0;
 }
 
 /*----------------- Colors */
+
 .bg-color-navbar {
     background-color: #2e4b36;
 }
@@ -13,18 +15,30 @@ body {
 
 
 /*----------------- Navbar */
+
 #navcontainer {
     margin: 0;
     padding: 0;
 }
 
+#navcontainer {
+    font-size: 0;
+}
+
 #nav li {
     font-size: 25px;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #nav li a {
     color: #e6e3d3;
     text-decoration: none;
+}
+
+.navitem {
+    
 }
 
 /*----------------- Hero Image */
@@ -33,4 +47,6 @@ body {
 /*----------------- Footer */
 
 
-/*----------------- Unused Classes and ID */
+/*----------------- Media Query */
+
+
