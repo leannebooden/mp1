@@ -16,29 +16,35 @@ body {
 
 /*----------------- Navbar */
 
-#navcontainer {
+#nav {
     margin: 0;
     padding: 0;
 }
 
-#navcontainer {
-    font-size: 0;
+#navbar {
+    list-style-type: none;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
-#nav li {
-    font-size: 25px;
-    margin: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
+#navbar li {
+    display: inline;
 }
 
-#nav li a {
+.navitem a {
     color: #e6e3d3;
     text-decoration: none;
+    font-size: 25px;
+    margin-right: 10%;
 }
 
-.navitem {
-    
+#homeitem a {
+    margin-left: 300px;
+}
+
+.navitem span {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
 }
 
 /*----------------- Hero Image */
