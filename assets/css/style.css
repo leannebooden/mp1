@@ -7,7 +7,7 @@ body {
 
 /*----------------- Colors */
 
-.bg-color-navbar {
+.bg-color-bar {
     background-color: #2e4b36;
 }
 
@@ -52,6 +52,18 @@ body {
 
 /*----------------- Footer */
 
+#footer-bar {
+    margin-top: 300px;
+}
+
+#footer-bar p {
+    text-align: center;
+    color: #e6e3d3;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    padding: 5%;
+}
 
 /*----------------- Media Query */
 
