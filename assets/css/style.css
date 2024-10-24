@@ -15,17 +15,19 @@ body {
     color: #e6e3d3;
 }
 
-/*----------------- Fonts */
+/*----------------- Default Fonts */
 
-.font-roboto {
+h2, p, a {
     font-family: "Roboto", sans-serif;
+    color: #e6e3d3;
 }
 
-.font-caveat {
+h1 {
     font-family: "Caveat", sans-serif;
+    color: #e6e3d3;
 }
 
-/*----------------- Heading */
+/*----------------- Navbar */
 
 .navbar {
     background-color: #2e4b36;
@@ -33,11 +35,9 @@ body {
     background-size: 10%;
     background-repeat: no-repeat;
     background-position: right;
-    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 1.5rem;
     padding: 2rem;
-    color:#e6e3d3;
 }
 
 .navbar a {
@@ -48,13 +48,6 @@ body {
     font-size: 2rem;
     font-weight: 400;
 }
-
-/*----------------- Navbar */
-
-.navbar {
-    background-color: #2e4b36;
-}
-
 
 /*----------------- Hero Image */
 
@@ -67,13 +60,30 @@ body {
 }
 
 #hero-container h1 {
-    font-family: "Caveat", sans-serif;
     font-weight: 300;
     font-size: 5rem;
-    color: #e6e3d3;
     text-align: center;
     padding: 20rem;
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/*----------------- Service Overview */
+
+#service-overview {
+    background-color: #5f725d;
+}
+
+#service-overview h2 {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+}
+
+#service-overview p {
+    text-align: center;
+    padding: 0 2rem 2rem 2rem;
 }
 
 /*----------------- Footer */
@@ -85,7 +95,6 @@ body {
 #footer-bar p {
     text-align: center;
     color: #e6e3d3;
-    font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 25px;
     padding: 5%;
