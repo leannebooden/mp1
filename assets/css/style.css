@@ -5,6 +5,11 @@ body {
     padding: 0;
 }
 
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
 /*----------------- Colors */
 
 .bg-color-bar {
@@ -17,7 +22,7 @@ body {
 
 /*----------------- Default Fonts */
 
-h2, p, a {
+h2, h5, p, a {
     font-family: "Roboto", sans-serif;
     color: #e6e3d3;
 }
@@ -25,6 +30,38 @@ h2, p, a {
 h1 {
     font-family: "Caveat", sans-serif;
     color: #e6e3d3;
+}
+
+/*----------------- Generic formatting */
+
+h2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    padding: 0 2rem 2rem 2rem;
+    margin-bottom: 0;
+}
+
+.half-screen-textbox {
+    /*use for half-screen width textbox*/
+    width: 50%;
+}
+
+.split-screen {
+    /*use for displaying content side by side*/
+    display: flex;
+    flex-direction: row;
+    width: 100%
+}
+
+.split-screen-img {
+    /*use for half screen width image*/
+    width:50%;
 }
 
 /*----------------- Navbar */
@@ -84,20 +121,56 @@ h1 {
 #service-overview p {
     text-align: center;
     padding: 0 2rem 2rem 2rem;
+    margin-bottom: 0;
+}
+
+/*----------------- About Me Brief */
+
+#about-me-home {
+    background-color: #312e28;
+}
+
+#mapdice {
+    width:100%;
+    height: auto;
 }
 
 /*----------------- Footer */
 
-#footer-bar {
-    
+#dice-logo {
+    width: 100px;
+    height: auto;
+    padding: 1rem;
 }
 
-#footer-bar p {
-    text-align: center;
-    color: #e6e3d3;
-    font-weight: 300;
-    font-size: 25px;
-    padding: 5%;
+.footer-heading {
+   margin: 0;
+
+}
+
+footer {
+    background-color:#2e4b36;
+    min-height: 120px;
+    margin: 0;
+}
+
+footer .row {
+    width: 100%;
+    align-items: center;
+}
+
+#dice-logo {
+    display:in-line;
+}
+
+footer i {
+   font-size: 30px;
+   padding: 0 20px; 
+}
+
+.webname {
+    font-family: "Caveat", sans-serif;
+    font-size: 30px;
 }
 
 /*----------------- Media Query */
