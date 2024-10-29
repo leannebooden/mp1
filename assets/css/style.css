@@ -21,6 +21,13 @@ body {
     color: #e6e3d3;
 }
 
+.light-green-background {
+    background-color: #5f725d;
+}
+
+.dark-brown-background {
+    background-color: #312e28;
+}
 /*----------------- Default Fonts */
 
 h2, h5, p, a {
@@ -131,10 +138,6 @@ p {
 
 /*----------------- Service Overview */
 
-#service-overview {
-    background-color: #5f725d;
-}
-
 #service-overview h2 {
     text-align: center;
     padding-top: 1rem;
@@ -149,10 +152,6 @@ p {
 }
 
 /*----------------- About Me Brief */
-
-#about-me-home {
-    background-color: #312e28;
-}
 
 #mapdice {
     width:100%;
@@ -205,13 +204,44 @@ footer ul {
     margin-bottom: 0;
 }
 
-/*----------------- Services Title*/
+/*----------------- About Me Intro*/
+
+#about-me-intro {
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 0;
+}
+
+#about-me-intro p {
+    padding: 0;
+}
+
+/*----------------- About Me - Section Container */
 
 
+/*----------------- About Me - Section 2 */
 
+#section-2 {
+    
+}
+
+#section-2-img {
+    width:100%;
+    height: auto;
+}
+
+/*----------------- About Me - Section 3 */
+
+#section-3 {
+
+}
+
+#blue-dice {
+    width:100%;
+    height: auto;
+}
 
 /*----------------- Media Query */
-
 @media only screen and (max-width: 1000px) {
     footer .webname {
         display:none;
@@ -228,5 +258,19 @@ footer ul {
     .half-screen-textbox, .split-screen-img {
         width: 100%;
     }
+
+    #order-items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section-2-image {
+        order: 1;
+    }
+
+    #section-2 {
+        order: 2;
+    }
+    
 }
 
