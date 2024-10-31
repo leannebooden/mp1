@@ -160,10 +160,12 @@ p {
 
 /*----------------- Footer */
 
+
 #dice-logo {
     width: 100px;
     height: auto;
-    padding: 3px 2vw 3px 5px;
+    padding: 0;
+    margin-left: 20px;
 }
 
 .footer-heading {
@@ -191,12 +193,14 @@ footer .row {
 
 footer i {
    font-size: 30px;
-   padding: 0 1vw; 
+   padding: 0 0.8vw; 
 }
 
 .webname {
     font-family: "Caveat", sans-serif;
-    font-size: 2.5vw;
+    font-size: 2.4vw;
+    padding-left: 35px;
+    padding-right: 0;
 }
 
 footer ul {
@@ -221,10 +225,6 @@ footer ul {
 
 /*----------------- About Me - Section 2 */
 
-#section-2 {
-    
-}
-
 #section-2-img {
     width:100%;
     height: auto;
@@ -232,17 +232,49 @@ footer ul {
 
 /*----------------- About Me - Section 3 */
 
-#section-3 {
-
-}
-
 #blue-dice {
     width:100%;
     height: auto;
 }
 
+/*----------------- Services Intro */
+
+#services-intro {
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 0;
+}
+
+/*----------------- Campaigns*/
+
+#monster-img {
+    width:100%;
+    height: auto;
+}
+
+#tavern-img {
+    width:100%;
+    height: auto;
+}
+
+#skull-man-img {
+    width:100%;
+    height: auto;
+}
+
+#wizard-img {
+    width:100%;
+    height: auto;
+}
+
 /*----------------- Media Query */
-@media only screen and (max-width: 1000px) {
+@media only screen and (min-width: 993px) {
+   #services-small {
+    display: none;
+   } 
+}
+
+@media only screen and (max-width: 992px) {
     footer .webname {
         display:none;
     }
@@ -251,26 +283,32 @@ footer ul {
         padding-left: 10px;
     }
 
-    .split-screen {
-        display: block;
-    }
-
     .half-screen-textbox, .split-screen-img {
         width: 100%;
     }
 
-    #order-items {
-        display: flex;
+    .block-display {
+        display: block;
+    }
+
+    .column-reg {
         flex-direction: column;
     }
 
-    #section-2-image {
-        order: 1;
+    .column-rev {
+        flex-direction: column-reverse;
     }
 
-    #section-2 {
-        order: 2;
+    #services-large {
+        display:none;
     }
-    
+
+    .button {
+        font-family: "Roboto", sans-serif;
+    }
+
+    .accordion-btn-color {
+        color: #e6e3d3;
+    }
 }
 

@@ -9,7 +9,6 @@
 
         <!--Bootstrap-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-        
 
         <!--Font Awesome-->
         <script src="https://kit.fontawesome.com/31460f9fdc.js" crossorigin="anonymous"></script>
@@ -23,7 +22,8 @@
         <link rel="stylesheet" href="assets/css/style.css" />
     </head>
     <body>
-        <header> <!--Navbar-->
+        <header>
+            <!--Navbar-->
             <nav id="main-nav" class="navbar navbar-expand-lg" data-bs-theme="dark">
                 <div class="container-fluid">
                     <a id="logo" class="navbar-brand" href="#">The Dice Goblins Dungeon</a>
@@ -42,33 +42,167 @@
             </nav>
         </header>
 
-        <section><!--Header Banner-->
+        <section>
+            <!--Header Banner-->
             <div class="banner-container">
                 <div class="text-center black-overlay">
                     <h1 class="title-text">Services</h1>
                 </div>
-             </div>
+            </div>
         </section>
-        
-        <section><!--Services Info--></section>
 
-        <section><!--Campaign One--></section>
+        <section>
+            <!--Services Info-->
+            <div id="services-intro" class="light-green-background">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </p>
+            </div>
+        </section>
 
-        <section><!--Campaign Two--></section>
+        <div id="services-large"> <!--Displayed only on larger screens-->
+        <section>
+            <!--Campaign One-->
+            <div class="split-screen column-reg">
+                <div id="campaign-one" class="half-screen-textbox dark-brown-background">
+                    <h2>Campaign One</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    </p>
+                </div>
+                <div class="split-screen-img">
+                    <img id="monster-img" src="assets/img/services/monster.jpg" alt="monster roars as it stands in a forest" />
+                </div>
+            </div>
+        </section>
 
-        <section><!--Campaign Three--></section>
+        <section>
+            <!--Campaign Two-->
+            <div class="split-screen column-rev">
+                <div class="split-screen-img">
+                    <img id="tavern-img" src="assets/img/services/tavern.jpg" alt="tavern" />
+                </div>
+                <div id="campaign-two" class="half-screen-textbox light-green-background">
+                    <h2>Campaign Two</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    </p>
+                </div>
+            </div>
+        </section> 
 
-        <section><!--Character Building--></section>
+        <section>
+            <!--Campaign Three-->
+            <div class="split-screen column-reg">
+                <div id="campaign-three" class="half-screen-textbox dark-brown-background">
+                    <h2>Campaign Three</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    </p>
+                </div>
+                <div class="split-screen-img">
+                    <img id="skull-man-img" src="assets/img/services/horror-campaign.jpg" alt="man with a skull face surrounded by smoke" />
+                </div>
+            </div>
+        </section>
 
-        <footer class="container-fluid d-flex align-items-center"> <!--Footer-->
+        <section>
+            <!--Character Building-->
+
+            <div class="split-screen column-rev">
+                <div class="split-screen-img">
+                    <img id="wizard-img" src="assets/img/services/wizard.png" alt="wizard" />
+                </div>
+                <div id="character-building" class="half-screen-textbox light-green-background">
+                    <h2>Character Building</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    </p>
+                </div>
+            </div>
+        </section>
+        </div>
+
+
+        <section id="services-small"> <!--Displayed only on smaller screens-->
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Campaign One
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                  </div>
+                  <div class="split-screen-img">
+                    <img id="monster-img" src="assets/img/services/monster.jpg" alt="monster roars as it stands in a forest" />
+                </div>
+                </div>
+
+                <div class="accordion-item accordion-btn-color">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Campaign Two
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                  </div>
+                  <div class="split-screen-img">
+                    <img id="tavern-img" src="assets/img/services/tavern.jpg" alt="tavern" />
+                </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Campaign Three
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                  </div>
+                  <div class="split-screen-img">
+                    <img id="skull-man-img" src="assets/img/services/horror-campaign.jpg" alt="man with a skull face surrounded by smoke" />
+                </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        Character Building
+                      </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                    </div>
+                  </div>
+                  <div class="split-screen-img">
+                    <img id="wizard-img" src="assets/img/services/wizard.png" alt="wizard" />
+                </div>
+              </div>
+        </section>
+
+        <footer class="container-fluid d-flex align-items-center">
+            <!--Footer-->
             <div class="row">
                 <div class="col-sm-1">
                     <img id="dice-logo" src="assets/img/multi/dice-logo.png" alt="dice logo" />
                 </div>
-                <div class="footer-heading col-sm-3">
+                <div class="footer-heading col-sm-4">
                     <h5 class="webname">The Dice Goblins Dungeon</h5>
                 </div>
-                <div id="social-logos" class="col-sm-4 text-center">
+                <div id="social-logos" class="col-sm-2 text-center">
                     <ul>
                         <li class="list-inline-item">
                             <a target="_blank" href="https://www.facebook.com/?locale=en_GB">
