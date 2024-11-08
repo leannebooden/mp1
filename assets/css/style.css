@@ -94,15 +94,33 @@ p {
 /*----------------- Navbar */
 
 .navbar {
-    background-image: url("../../assets/img/multi/vines.png");
-    background-size: 45%;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-position: right bottom;
     background-color: #2e4b36;
     font-weight: 500;
     font-size: 1.5rem;
     padding: 2rem;
+    z-index: 0;
+}
+
+#main-nav {
+    position: relative;
+}
+
+.navbar-brand {
+    position: relative;
+    z-index: 3;
+}
+
+.navbar a {
+    z-index: 2;
+}
+
+header img {
+    width: 40vw;
+    position: absolute;
+    z-index: 1;
+    left: 60%;
+    top: 0px;
+    opacity: 0.5;
 }
 
 .navbar a {
@@ -267,6 +285,85 @@ footer ul {
     height: auto;
 }
 
+/*----------------- Contact Form*/
+
+#contactform {
+    background-image: url("../../assets/img/contact-page/dragon-contact.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    color: #e6e3d3;
+    border: 15px solid #312e28;
+    padding: 10px;
+}
+
+#contactform h2 {
+    text-decoration: underline;
+    padding: 30px;
+    font-size: 40px;
+}
+
+#contactform form {
+    background-color: rgba(0, 0, 0, 0.5);;
+    background-size:cover;
+    justify-content: center;
+    margin: 10vw 25vw 10vw 25vw;
+    text-align:center;
+    padding: 40px 0px 40px 0px;
+}
+
+button {
+    padding: 10px;
+}
+
+input[type=text], input[type=number], input[type=email] {
+    border: 2px solid;
+    border-radius: 4px;
+    background-color: rgba(230, 227, 211, 0.7);
+  }
+
+  button {
+    width: 20%;
+  }
+
+  .formitem {
+    padding: 10px 10px 10px 0px;
+  }
+
+  #contactform p {
+    padding: 30px 0 10px 0;
+    font-size: 30px;
+  }
+
+  #experienceradio {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+
+  #experienceradio label {
+    padding: 5px;
+  }
+
+  #name {
+    margin-left: 6px;
+  }
+
+  #email {
+    margin-left: 9px;
+  }
+
+  #freetext {
+    width: 70%;
+    height: 300px;
+    margin-top: 20px;
+  }
+
+
+
+
 /*----------------- Media Query */
 @media only screen and (min-width: 993px) {
    #services-small {
@@ -275,6 +372,10 @@ footer ul {
 }
 
 @media only screen and (max-width: 992px) {
+
+    header img {
+        width: 80vw;
+    }
     footer .webname {
         display:none;
     }
