@@ -74,7 +74,7 @@ p {
 }
 .banner-container {
     overflow: hidden;
-    background-image: url("../../assets/img/multi/dice-banner.jpg");
+    background-image: url("../../assets/img/multi/dice-banner.webp");
     background-repeat: no-repeat;
     background-position: center center;
     display: block;
@@ -93,12 +93,17 @@ p {
 
 /*----------------- Navbar */
 
+header {
+    position: relative;
+}
+
 .navbar {
     background-color: #2e4b36;
     font-weight: 500;
     font-size: 1.5rem;
     padding: 2rem;
     z-index: 0;
+    position: relative;
 }
 
 #main-nav {
@@ -110,12 +115,9 @@ p {
     z-index: 3;
 }
 
-.navbar a {
-    z-index: 2;
-}
-
-header img {
-    width: 40vw;
+#vines-header {
+    width: 1000px;
+    height: auto;
     position: absolute;
     z-index: 1;
     left: 60%;
@@ -124,18 +126,38 @@ header img {
 }
 
 .navbar a {
-    margin-left: 2rem;
+    margin-left: 4rem;
+    z-index: 2;
 }
 
 #logo {
-    font-size: 2rem;
-    font-weight: 400;
+    height: 100px;
+    width: auto;
+    position: absolute;
+    z-index: 4;
+    margin-top: 6px;
+    margin-left: 6px;
 }
+
+.navbar-toggler {
+    position: relative;
+    z-index: 2;
+}
+
+.navbar-collapse {
+    position: relative;
+    z-index: 3;
+}
+
+.navbar-nav {
+    margin-left: 50px;
+}
+
 
 /*----------------- Hero Image */
 
 #hero-container {
-    background-image: url("../../assets/img/home-page/goblin-hero.png");
+    background-image: url("../../assets/img/home-page/goblin-hero.webp");
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -288,7 +310,7 @@ footer ul {
 /*----------------- Contact Form*/
 
 #contactform {
-    background-image: url("../../assets/img/contact-page/dragon-contact.png");
+    background-image: url("../../assets/img/contact-page/dragon-contact.webp");
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -371,17 +393,29 @@ input[type=text], input[type=number], input[type=email] {
    } 
 }
 
+@media only screen and (max-width: 1200px) {
+
+    #vines-header {
+        left: 80%;
+    }
+}
+
 @media only screen and (max-width: 992px) {
 
     header img {
         width: 80vw;
     }
+
     footer .webname {
         display:none;
     }
 
     #dice-logo {
         padding-left: 10px;
+    }
+
+    #vines-header {
+        left: 20%;
     }
 
     .half-screen-textbox, .split-screen-img {
@@ -410,6 +444,21 @@ input[type=text], input[type=number], input[type=email] {
 
     .accordion-btn-color {
         color: #e6e3d3;
+    }
+
+    .logo-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    #logo {
+        margin-left: 0;
+        margin-right: 100px;
+    }
+
+    #main-nav {
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 }
 
