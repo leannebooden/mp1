@@ -123,6 +123,18 @@ header {
     left: 60%;
     top: 0px;
     opacity: 0.5;
+    overflow: hidden;
+}
+
+.navbar .nav-link {
+    color:#e6e3d3 !important;
+    opacity: 0.7;
+}
+
+.navbar .active {
+    color:#e6e3d3 !important;
+    opacity: 1;
+    text-decoration: underline;
 }
 
 .navbar a {
@@ -200,6 +212,9 @@ header {
 
 /*----------------- Footer */
 
+footer .container-fluid {
+    display: flex;
+}
 
 #dice-logo {
     width: 100px;
@@ -208,9 +223,6 @@ header {
     margin-left: 20px;
 }
 
-.footer-heading {
-   margin: 0;
-}
 
 #social-logos {
     padding: 0;
@@ -227,10 +239,6 @@ footer .row {
     align-items: center;
 }
 
-#dice-logo {
-    display:in-line;
-}
-
 footer i {
    font-size: 30px;
    padding: 0 0.8vw; 
@@ -238,15 +246,44 @@ footer i {
 
 .webname {
     font-family: "Caveat", sans-serif;
-    font-size: 2.4vw;
-    padding-left: 35px;
-    padding-right: 0;
+    font-size: 30px;
 }
 
 footer ul {
     padding-left: 0;
     margin-bottom: 0;
 }
+
+#logo-footer {
+    height: 100px;
+    width: auto;
+    margin-top: 6px;
+    margin-left: 6px;
+}
+
+footer h5 {
+    padding-right: 20px;
+    margin-bottom: 0;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.logo-right h5 {
+   margin-left: 120px;
+   padding-right: 0;
+   padding-top: 40px;
+}
+
+.logo-left {
+    float: left;
+}
+
+#contact {
+    justify-items: flex-end;
+}
+
 
 /*----------------- About Me Intro*/
 
@@ -341,10 +378,11 @@ button {
     padding: 10px;
 }
 
-input[type=text], input[type=number], input[type=email] {
+input[type=text], input[type=number], input[type=email], textarea {
     border: 2px solid;
     border-radius: 4px;
     background-color: rgba(230, 227, 211, 0.7);
+    font-size: 25px;
   }
 
   button {
@@ -383,9 +421,6 @@ input[type=text], input[type=number], input[type=email] {
     margin-top: 20px;
   }
 
-
-
-
 /*----------------- Media Query */
 @media only screen and (min-width: 993px) {
    #services-small {
@@ -398,16 +433,15 @@ input[type=text], input[type=number], input[type=email] {
     #vines-header {
         left: 80%;
     }
+    footer .webname {
+        display:none;
+    }
 }
 
 @media only screen and (max-width: 992px) {
 
     header img {
         width: 80vw;
-    }
-
-    footer .webname {
-        display:none;
     }
 
     #dice-logo {
