@@ -423,6 +423,18 @@ input[type=text], input[type=number], input[type=email], textarea {
     margin-top: 20px;
   }
 
+  .modal-body, .modal-header, .modal-footer {
+    background-color: #312e28;
+  }
+
+  .btn-danger {
+    background-color: #4d0013;
+    border-color: #4d0013;
+    color:#e6e3d3;
+    padding: 13px 30px 13px 30px;
+    font-size: 20px;
+  }
+
 /*----------------- Media Query */
 @media only screen and (min-width: 993px) {
    #services-small {

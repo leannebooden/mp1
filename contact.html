@@ -22,13 +22,14 @@
         <link rel="stylesheet" href="assets/css/style.css" />
     </head>
     <body>
-        <header> <!--Navbar-->
+        <header>
+            <!--Navbar-->
             <div class="logo-container">
                 <a href="index.html">
-                    <img id="logo" src="assets/img/multi/goblin-logo.webp" alt="goblin holding a d20 dice">
+                    <img id="logo" src="assets/img/multi/goblin-logo.webp" alt="goblin holding a d20 dice" />
                 </a>
             </div>
-            <img id="vines-header" src="assets/img/multi/vines.webp">
+            <img id="vines-header" src="assets/img/multi/vines.webp" />
             <nav id="main-nav" class="navbar navbar-expand-lg" data-bs-theme="dark">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,10 +37,10 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                          <a class="nav-link" href="index.html">Home</a>
-                          <a class="nav-link" href="about-me.html">About Me</a>
-                          <a class="nav-link" href="services.html">Services</a>
-                          <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="about-me.html">About Me</a>
+                            <a class="nav-link" href="services.html">Services</a>
+                            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
                         </div>
                     </div>
                 </div>
@@ -57,7 +58,7 @@
 
         <section>
             <div id="contactform">
-                <form>
+                <form id="contact-form-java">
                     <h2>Contact Me</h2>
                     <div class="formitem">
                         <label for="name">Name:</label>
@@ -85,7 +86,21 @@
                     <label for="freetext">Query:</label> <br />
                     <textarea type="text" id="freetext">Enter Information...</textarea> <br />
 
-                    <input type="submit" value="Submit" />
+                    <input type="submit" value="Submit" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#submit-modal" />
+
+                    <div class="modal fade" id="submit-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Submitted!</h5>
+                                </div>
+                                <div class="modal-body">Thank you for submitting your information. I will get in touch as soon as possible!</div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </form>
             </div>
         </section>
@@ -125,13 +140,39 @@
                         </li>
                     </ul>
                 </div>
-                <div  id="contact" class="col-4">
+                <div id="contact" class="col-4">
                     <a class="nav-link" href="contact.html">
-                     <h5>Contact</h5>
+                        <h5>Contact</h5>
                     </a>
                 </div>
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script>
+            document.getElementById("contact-form-java").addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Set a flag in session storage
+        sessionStorage.setItem("formSubmitted", "true");
+
+        // Optionally, submit the form here if you want to send data to the server
+        // this.submit();
+
+        // Reload the page
+        location.reload();
+    });
+
+    // Check if the form was submitted on page load
+    window.addEventListener("load", function () {
+        if (sessionStorage.getItem("formSubmitted") === "true") {
+            // Show the modal
+            var modal = new bootstrap.Modal(document.getElementById("submit-modal"));
+            modal.show();
+
+            // Remove the flag from session storage
+            sessionStorage.removeItem("formSubmitted");
+        }
+    });
+        </script>
     </body>
 </html>
