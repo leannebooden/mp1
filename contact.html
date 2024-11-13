@@ -61,7 +61,7 @@
                     <h2>Contact Me</h2>
                     <div class="formitem">
                         <label for="name">Name:</label>
-                        <input type="text" id="name" /> <br />
+                        <input type="text" required id="name" /> <br />
                     </div>
                     <div class="formitem">
                         <label for="phone">Phone:</label>
@@ -69,7 +69,7 @@
                     </div>
                     <div class="formitem">
                         <label for="email">Email: </label>
-                        <input type="email" id="email" /> <br />
+                        <input type="email" required id="email" /> <br />
                     </div>
 
                     <div id="experienceradio">
@@ -90,16 +90,20 @@
             </div>
         </section>
 
-        <footer class="container-fluid d-flex align-items-center">
+        <footer class="container-fluid">
             <!--Footer-->
-            <div class="row">
-                <div class="col-sm-1">
-                    <img id="dice-logo" src="assets/img/multi/dice-logo.webp" alt="dice logo" />
+            <div class="row g-0">
+                <div class="footer-heading col-4">
+                    <a href="index.html">
+                        <div class="logo-left">
+                            <img id="logo-footer" src="assets/img/multi/goblin-logo.webp" alt="goblin logo" />
+                        </div>
+                        <div class="logo-right">
+                            <h5 class="webname">The Dice Goblins Dungeon</h5>
+                        </div>
+                    </a>
                 </div>
-                <div class="footer-heading col-sm-3">
-                    <h5 class="webname">The Dice Goblins Dungeon</h5>
-                </div>
-                <div id="social-logos" class="col-sm-4 text-center">
+                <div id="social-logos" class="col-4 text-center align-items-center">
                     <ul>
                         <li class="list-inline-item">
                             <a target="_blank" href="https://www.facebook.com/?locale=en_GB">
@@ -121,8 +125,10 @@
                         </li>
                     </ul>
                 </div>
-                <div class="footer-heading col-sm-4 text-end">
-                    <h5>Contact</h5>
+                <div  id="contact" class="col-4">
+                    <a class="nav-link" href="contact.html">
+                     <h5>Contact</h5>
+                    </a>
                 </div>
             </div>
         </footer>
