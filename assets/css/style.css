@@ -31,7 +31,11 @@ body {
 
 /*----------------- Default Fonts */
 
-h2, h4, h5, p, a {
+h2,
+h4,
+h5,
+p,
+a {
     font-family: "Roboto", sans-serif;
     color: #e6e3d3;
 }
@@ -59,19 +63,34 @@ p {
 .half-screen-textbox {
     /*use for half-screen width textbox*/
     width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .split-screen {
     /*use for displaying content side by side*/
     display: flex;
-    flex-direction: row;
-    width: 100%
+    width: 100%;
+    align-items: stretch;
 }
 
 .split-screen-img {
     /*use for half screen width image*/
-    width:50%;
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.main-images {
+    height: 100%;
+    width: auto;
+}
+
 .banner-container {
     overflow: hidden;
     background-image: url("../../assets/img/multi/dice-banner.webp");
@@ -102,9 +121,9 @@ p {
 }
 
 .para-text ul {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 23px;
-    color:#e6e3d3;
+    color: #e6e3d3;
     margin-bottom: 30px;
 }
 
@@ -113,6 +132,7 @@ p {
 header {
     position: relative;
 }
+
 
 .navbar {
     background-color: #2e4b36;
@@ -133,23 +153,24 @@ header {
 }
 
 #vines-header {
-    width: 1000px;
+    max-width: 1000px;
+    width: 80%;
     height: auto;
     position: absolute;
     z-index: 1;
-    left: 60%;
+    right: 0;
     top: 0px;
     opacity: 0.5;
     overflow: hidden;
 }
 
 .navbar .nav-link {
-    color:#e6e3d3 !important;
+    color: #e6e3d3 !important;
     opacity: 0.7;
 }
 
 .navbar .active {
-    color:#e6e3d3 !important;
+    color: #e6e3d3 !important;
     opacity: 1;
     text-decoration: underline;
 }
@@ -182,7 +203,6 @@ header {
     margin-left: 50px;
 }
 
-
 /*----------------- Hero Image */
 
 #hero-container {
@@ -204,8 +224,7 @@ header {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-
-/*----------------- Service Overview */
+/*----------------- Index Page */
 
 #service-overview h2 {
     text-align: center;
@@ -217,14 +236,13 @@ header {
 #services-intro .para-text {
     padding-top: 30px;
 }
-/*----------------- About Me Brief */
 
 #about-me-intro .para-text {
     padding-top: 50px;
 }
 
 #mapdice {
-    width:100%;
+    width: 100%;
     height: auto;
 }
 
@@ -241,13 +259,12 @@ footer .container-fluid {
     margin-left: 20px;
 }
 
-
 #social-logos {
     padding: 0;
 }
 
 footer {
-    background-color:#2e4b36;
+    background-color: #2e4b36;
     min-height: 120px;
     margin: 0;
 }
@@ -258,8 +275,8 @@ footer .row {
 }
 
 footer i {
-   font-size: 30px;
-   padding: 0 0.8vw; 
+    font-size: 30px;
+    padding: 0 0.8vw;
 }
 
 .webname {
@@ -289,9 +306,9 @@ footer a {
 }
 
 .logo-right h5 {
-   margin-left: 120px;
-   padding-right: 0;
-   padding-top: 40px;
+    margin-left: 120px;
+    padding-right: 0;
+    padding-top: 40px;
 }
 
 .logo-left {
@@ -302,48 +319,25 @@ footer a {
     justify-items: flex-end;
 }
 
-
-
-/*----------------- About Me */
-
-#section-2-img {
-    width:100%;
-    height: auto;
-}
-
-#blue-dice {
-    width:100%;
-    height: auto;
-}
-
-/*----------------- Services Intro */
+/*----------------- Services Page*/
 
 #services-intro {
-    text-align: center;
     padding: 2rem;
     margin-bottom: 0;
 }
 
-/*----------------- Campaigns*/
-
-#monster-img {
-    width:100%;
-    height: auto;
+#services-intro ul {
+    font-size: 23px;
 }
 
-#tavern-img {
-    width:100%;
-    height: auto;
+.accordion-header {
+    background-color: #312e28;
 }
 
-#skull-man-img {
-    width:100%;
-    height: auto;
-}
-
-#wizard-img {
-    width:100%;
-    height: auto;
+.accordion-button {
+    background-color: #312e28; /* Desired background color */
+    color: #e6e3d3; /* Text color */
+    font-weight: bold; 
 }
 
 /*----------------- Contact Form*/
@@ -353,7 +347,7 @@ footer a {
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 30px;
     font-weight: 300;
     color: #e6e3d3;
@@ -368,11 +362,11 @@ footer a {
 }
 
 #contactform form {
-    background-color: rgba(0, 0, 0, 0.5);;
-    background-size:cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
     justify-content: center;
     margin: 10vw 25vw 10vw 25vw;
-    text-align:center;
+    text-align: center;
     padding: 40px 0px 40px 0px;
 }
 
@@ -380,80 +374,83 @@ button {
     padding: 10px;
 }
 
-input[type=text], input[type=number], input[type=email], textarea {
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {
     border: 2px solid;
     border-radius: 4px;
     background-color: rgba(230, 227, 211, 0.7);
     font-size: 25px;
-  }
+}
 
-  button {
+button {
     width: 20%;
-  }
+}
 
-  .formitem {
+.formitem {
     padding: 10px 10px 10px 0px;
-  }
+}
 
-  #contactform p {
+#contactform p {
     padding: 30px 0 10px 0;
     font-size: 30px;
-  }
+}
 
-  #experienceradio {
+#experienceradio {
     font-size: 25px;
     margin-bottom: 30px;
-  }
+}
 
-  #experienceradio label {
+#experienceradio label {
     padding: 5px;
-  }
+}
 
-  #name {
+#name {
     margin-left: 6px;
-  }
+}
 
-  #email {
+#email {
     margin-left: 9px;
-  }
+}
 
-  #freetext {
+#freetext {
     width: 70%;
     height: 300px;
     margin-top: 20px;
-  }
+}
 
-  .modal-body, .modal-header, .modal-footer {
+.modal-body,
+.modal-header,A
+.modal-footer {
     background-color: #312e28;
-  }
+}
 
-  .btn-danger {
+.btn-danger {
     background-color: #4d0013;
     border-color: #4d0013;
-    color:#e6e3d3;
+    color: #e6e3d3;
     padding: 13px 30px 13px 30px;
     font-size: 20px;
-  }
+}
 
 /*----------------- Media Query */
 @media only screen and (min-width: 993px) {
-   #services-small {
-    display: none;
-   } 
+    #services-small {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
-
     #vines-header {
         left: 80%;
     }
     footer .webname {
-        display:none;
+        display: none;
     }
 }
 
 @media only screen and (max-width: 992px) {
-
     header img {
         width: 80vw;
     }
@@ -466,7 +463,8 @@ input[type=text], input[type=number], input[type=email], textarea {
         left: 20%;
     }
 
-    .half-screen-textbox, .split-screen-img {
+    .half-screen-textbox,
+    .split-screen-img {
         width: 100%;
     }
 
@@ -483,7 +481,7 @@ input[type=text], input[type=number], input[type=email], textarea {
     }
 
     #services-large {
-        display:none;
+        display: none;
     }
 
     .button {
@@ -520,6 +518,31 @@ input[type=text], input[type=number], input[type=email], textarea {
 
     .para-text p {
         padding-bottom: 0px;
+        font-size: 20px;
+    }
+
+    #contactform h2 {
+        padding: 30px;
+        font-size: 40px;
+    }
+
+    #contactform form {
+        justify-content: center;
+        margin: 2vw 2vw 10vw 2vw;
+        text-align: center;
+        padding: 20px 0px 20px 0px;
+        font-size: 20px;
+    }
+
+    #freetext {
+        width: 90%;
+    }
+
+    .modal {
+        max-width: 80vw;
+    }
+
+    #services-intro ul {
         font-size: 20px;
     }
 }
