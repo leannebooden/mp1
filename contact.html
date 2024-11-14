@@ -56,21 +56,23 @@
             </div>
         </section>
 
-        <section>
+        <section> 
             <div id="contactform">
-                <form id="contact-form-java">
+                <form action="https://formdump.codeinstitute.net/" id="contact-form-java" method="post">
                     <h2>Contact Me</h2>
                     <div class="formitem">
                         <label for="name">Name:</label>
-                        <input type="text" required id="name" /> <br />
+                        <input type="text" required id="name" name="clientname"/> <br />
                     </div>
+
                     <div class="formitem">
                         <label for="phone">Phone:</label>
-                        <input type="number" id="phone" /> <br />
+                        <input type="number" id="phone" name="phonenumber"/> <br />
                     </div>
+
                     <div class="formitem">
                         <label for="email">Email: </label>
-                        <input type="email" required id="email" /> <br />
+                        <input type="email" required id="email" name="emailaddress"/> <br />
                     </div>
 
                     <div id="experienceradio">
@@ -84,11 +86,11 @@
                     </div>
 
                     <label for="freetext">Query:</label> <br />
-                    <textarea type="text" id="freetext">Enter Information...</textarea> <br />
+                    <textarea type="text" id="freetext" name="enquiry" value="enquiry">Enter Information...</textarea> <br />
 
                     <input type="submit" value="Submit" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#submit-modal" />
 
-                    <div class="modal fade" id="submit-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <!--<div class="modal fade" id="submit-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -100,7 +102,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </form>
             </div>
         </section>
@@ -148,7 +150,8 @@
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <script>
+        
+        <!--<script>
             document.getElementById("contact-form-java").addEventListener("submit", function (event) {
         event.preventDefault(); // Prevent the default form submission
 
@@ -173,6 +176,6 @@
             sessionStorage.removeItem("formSubmitted");
         }
     });
-        </script>
+        </script>-->
     </body>
 </html>

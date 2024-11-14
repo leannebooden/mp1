@@ -66,6 +66,7 @@ p {
     padding: 20px;
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -74,7 +75,6 @@ p {
     /*use for displaying content side by side*/
     display: flex;
     width: 100%;
-    align-items: stretch;
 }
 
 .split-screen-img {
@@ -241,10 +241,7 @@ header {
     padding-top: 50px;
 }
 
-#mapdice {
-    width: 100%;
-    height: auto;
-}
+
 
 /*----------------- Footer */
 
@@ -318,6 +315,9 @@ footer a {
 #contact {
     justify-items: flex-end;
 }
+
+/*----------------- About Me Page*/
+
 
 /*----------------- Services Page*/
 
