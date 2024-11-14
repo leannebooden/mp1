@@ -328,15 +328,46 @@ footer a {
     font-size: 23px;
 }
 
+/*------Accordion*/
 .accordion-header {
     background-color: #312e28;
+    padding-bottom: 25px;
 }
 
 .accordion-button {
-    background-color: #312e28; /* Desired background color */
-    color: #e6e3d3; /* Text color */
+    background-color: #312e28;
+    color: #e6e3d3; 
     font-weight: bold; 
 }
+
+.accordion-button:not(.collapsed) {
+    background-color: #312e28;
+    color: #c8c29d;
+    font-family: 'Roboto', sans-serif;
+}
+
+.accordion-button:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+ }
+
+ .accordion-body {
+    background-color: #312e28;
+ }
+
+ .accordion-body p, .accordion-body ul {
+    font-size: 18px;
+    color: #e6e3d3; 
+ }
+
+ .accordion-body ul {
+    margin-left: 30px;
+ }
+
+ .accordion-button::after {
+    -webkit-filter: grayscale(1) invert(1);
+    filter: grayscale(1) invert(1);
+ }
 
 /*----------------- Contact Form*/
 
