@@ -142,7 +142,6 @@ header {
     position: relative;
 }
 
-
 .navbar {
     background-color: #2e4b36;
     font-weight: 500;
@@ -196,16 +195,6 @@ header {
     z-index: 4;
     margin-top: 6px;
     margin-left: 6px;
-}
-
-.navbar-toggler {
-    position: relative;
-    z-index: 2;
-}
-
-.navbar-collapse {
-    position: relative;
-    z-index: 3;
 }
 
 .navbar-nav {
