@@ -224,12 +224,12 @@ header {
 
 /*----------------- Index Page */
 
-#service-overview h2 {
+#dnd-header, #welcome-header {
     text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     margin-bottom: 0;
 }
+
 
 #services-intro .para-text {
     padding-top: 30px;
@@ -238,8 +238,6 @@ header {
 #about-me-intro .para-text {
     padding-top: 50px;
 }
-
-
 
 /*----------------- Footer */
 
@@ -313,9 +311,6 @@ footer a {
 #contact {
     justify-items: flex-end;
 }
-
-/*----------------- About Me Page*/
-
 
 /*----------------- Services Page*/
 
