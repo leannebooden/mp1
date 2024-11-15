@@ -138,7 +138,7 @@ For the mobile site, a hamburger menu was used instead to save space and allow f
 
 ![Navigation Bar](/assets/img/README/navigation-bar.webp)
 
-ADD SCREENSHOT OF HAMBURGER MENU
+![Navigation Bar](/assets/img/README/hamburger-menu.webp)
 
 ### Home Page
 
@@ -147,7 +147,7 @@ All the sections on this page have background colors in keeping with the earthy 
 
 An image of a goblin was chosen for the hero image. This ties into the title of the site and fits into the existing earthy color scheme. A translucent overlay was added to the image to allow the site title to stand out from the background. The design of this section was kept the same for mobile as it fitted well. 
 
-SCREENSHOTS
+![Hero Image](/assets/img/README/hero-screenshot.webp)
 
 #### Welcome
 
@@ -184,7 +184,7 @@ There are three sections that have an image alongside the text to further illust
 
 On mobile view, the services layout is changed. An accordion is used to save screen space on these devices. 
 
-### Contact
+### Contact Page
 
 A contact form to request more information about the services offered and/or to get in touch. The form does not request too much information, only the essentials as potential clients can be put off if asked to provide too much information up front. The name and email sections are required to ensure that enough information is collected to allow the site owner is able to contact potential clients.
 
