@@ -140,10 +140,10 @@ hr {
 
 header {
     position: relative;
+    background-color: #2e4b36;
 }
 
 .navbar {
-    background-color: #2e4b36;
     font-weight: 500;
     font-size: 1.5rem;
     padding: 2rem;
@@ -160,15 +160,18 @@ header {
     z-index: 3;
 }
 
+#vines-container {
+    z-index: 2;
+}
+
 #vines-header {
     max-width: 1000px;
     width: 80%;
     height: auto;
     position: absolute;
-    z-index: 1;
     right: 0;
     top: 0px;
-    opacity: 0.5;
+    opacity: 0.2;
     overflow: hidden;
 }
 
