@@ -127,6 +127,9 @@ I decided on this approach rather than wireframes to allow for more thorough pla
 - [About Me](/assets/img/README/about-me-phone.webp)
 - [Services](/assets/img/README/services-phone.webp)
 - [Contact](/assets/img/README/contact-phone.webp)
+
+The mock-ups use lorem ipsum placeholder text, this text has been replaced with appropriate content in the actual build.
+
 ## Features
 ---
 ### Navigation Bar
