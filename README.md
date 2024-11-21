@@ -211,7 +211,17 @@ On mobile devices, the site name is removed to save space on the footer and redu
 ![Footer Bar](/assets/img/README/footer-bar.webp)
 
 ## Testing
----
+
+I conducted the following testing on the site:
+- Opening the site with different browsers such as Chrome, Firefox and Safari to check for compatability issues
+- Tested the site on different screen sizes to check the responsive design. I used a combintation of Chrome Developer tools and alternate devices for this (mobile, laptop, tablet).
+- Tested all links within the site and the navbar to ensure they jump to the correct locations. 
+- Ensured the social media links in the footer open in new tabs and arrive at the correct destinations.
+- Tested the form to ensure the modal pops up when clicking submit and all the input types were correctly used.
+- No errors found in the condsole.
+
+The user experience was key when determining the features of the site. Below are the User Stories idendified at the planning stage and how these were met: 
+
 | ID | User Story | How was this acheieved? | Pass? |
 |---|---|---|---|
 |1| Navigate the site quickly and efficiently| Provided a clear navigation bar at the top and the ability to navigate to all pages from anywhere on the site. | YES |
@@ -220,42 +230,39 @@ On mobile devices, the site name is removed to save space on the footer and redu
 |4| Read about the DM running the sessions and their game style | About me page has a section explaining what a session 0 will entail to help players feel comfortable. | YES |
 |5| See that the DM has wellbeing as a priority | About me page has a section explaining what a session 0 will entail to help players feel comfortable. | YES |
 
-
 ### Bug Fixes
+These are some bugs encountered whilst building the site and the steps taken to resolve them:
 
-Bug: Encountered a bug with one navbar item dropping below the others. 
-
-Solve: This was solved by adding font-size: 0; to the navcontainer.
+- Bug: Encountered a bug with one navbar item dropping below the others. 
+    - Solve: This was solved by adding font-size: 0; to the navcontainer.
 
 ![Bug 1](/assets/img/README/bug-1.webp)
 
-Bug: The navbar text was not aligning with the logo image.
-
-Solve: Used align-items: center; on the footer .row
+- Bug: The navbar text was not aligning with the logo image.
+    - Solve: Used align-items: center; on the footer .row
 
 ![Bug 2](/assets/img/README/bug-2.webp)
 
-Bug: On the Services page, the sections were displaying in the wrong order on smaller screens.
-
-Solve: Added column-reverse to the containers of the sections that were displaying in the wrong order to reverse the order they display in. 
+- Bug: On the Services page, the sections were displaying in the wrong order on smaller screens.
+    - Solve: Added column-reverse to the containers of the sections that were displaying in the wrong order to reverse the order they display in. 
 
 ![Bug 3](/assets/img/README/bug-3.webp)
 
-Bug: The logo image in the footer was displaying on top of the site name rather than in-line with. 
-
-Solve: I discovered that the d-flex class I was using was from a previous bootstrap version and not applicable to version 5. I added display: flex to the container and the float: right; to the title and float: left; to the logo which allowed them to display correctly.
+- Bug: The logo image in the footer was displaying on top of the site name rather than in-line with. 
+    - Solve: I discovered that the d-flex class I was using was from a previous bootstrap version and not applicable to version 5. I added display: flex to the container and the float: right; to the title and float: left; to the logo which allowed them to display correctly.
 
 ![Bug 4](/assets/img/README/bug-4.webp)
 
-Bug: The vines image on the navbar was blocking the navitem functionality, meaning on certain screen sizes you were unable to click on the navlinks.
-
-Solve: Added z-index values to both the vines image and the navbar a items. By setting the z-index of the vines lower than the a items, this layered them correctly allowing the links to be clicked.
+- Bug: The vines image on the navbar was blocking the navitem functionality, meaning on certain screen sizes you were unable to click on the navlinks.
+    - Solve: Added z-index values to both the vines image and the navbar a items. By setting the z-index of the vines lower than the a items, this layered them correctly allowing the links to be clicked.
 
 ![Bug 5](/assets/img/README/bug-5.webp)
 
-Bug: The section headers were appearing next to the content rather than on top of.
+- Bug: The section headers were appearing next to the content rather than on top of.
+    - Solve: I added a flex-direction: column; to the container.
 
-Solve: I added a flex-direction: column; to the container.
+![Bug 6](/assets/img/README/bug-6.png)
+
 ### Remaining Bugs 
 
 One remaining bug identified, small amount of whitespace between accordions and images on small screens.
