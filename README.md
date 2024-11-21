@@ -1,7 +1,7 @@
 # The Dice Goblins Dungeon
 
 ![Live Project Mockup](/assets/img/README/amiresponsive.png)
-[LINK TO THE LIVE PROJECT](https://github.com/leannebooden-mp1-dice-goblins-dungeon)
+[LINK TO THE LIVE PROJECT](https://leannebooden.github.io/mp1-dice-goblins-dungeon/)
 
 ## Table of Contents
 ---
@@ -60,7 +60,7 @@ Within this document I will use the following abbreviations:
 - DM - Dungeon Master / Game Master
 
 
-[Link to the live page](https://github.com/leannebooden-mp1-dice-goblins-dungeon)
+[Link to the live page](https://leannebooden.github.io/mp1-dice-goblins-dungeon/)
 
 ## UX
 ---
@@ -419,7 +419,7 @@ The project was deployed to GitHub Pages. The following steps are used to deploy
 * Navigate to the settings tab and select the 'Pages' tab from the menu.
 * Under 'Source' click the dropdown labelled 'None' and select the 'master' branch.
 * Click save. The page will automatically refresh and the published site link can be found on the 'Pages' tab.
-* The link can be found here - [Link to the live page](https://github.com/leannebooden-mp1-dice-goblins-dungeon)
+* The link can be found here - [Link to the live page](https://leannebooden.github.io/mp1-dice-goblins-dungeon/)
 
 ### Forking the GitHub Repository
 
