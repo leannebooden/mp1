@@ -7,7 +7,7 @@
 ## Table of Contents
 ---
 **The Dice Goblins Dungeon**
-- [Table of Contents](#the-dice-goblins-dungeon)
+- [Table of Contents](#table-of-contents)
     - [Introduction](#introduction)
     - [UX](#ux)
         - [User Stories](#user-stories)
