@@ -167,9 +167,10 @@ This section provides information on the style of gameplay clients can expect. T
 This section discusses what a player can expect from a session 0. A session 0 is used to establish the boundaries of both the player and the DM. This is vital information for clients as it helps to create trust between clients and the DM even before starting to play. 
 ### About Me Page
 
-The about me page continues with the earthy color scheme for site cohesion. There is an overview of the page content at the top. This provides a basic overview to allow users to quickly identify the information they need to encourage them to read further. The photos chosen continue to portray the fantasy theme 
+The about me page continues with the earthy color scheme for site cohesion. The title of this page has a background with an image of a die. This image continues the color theme and is used on all pages except the index page to add to the site cohesion. There is an overview of the page content at the top to allow users to quickly identify the information they need to encourage them to read further. The photos chosen continue to portray the fantasy theme.  
+![Header Background](/assets/img/README/header-background.png)
 
-On mobile devices the layout is changed to display a text section followed by an image to improve readability and make the content look less cluttered. 
+On mobile devices the layout is changed to display a text section followed by an image to improve readability and make the content look less cluttered.
 #### DM Style
 
 This section provides information on the style of gameplay clients can expect. This is important information for a client to make sure they find a session that is compatible with their requirements as not every DM will suit every player. The aim is to provide plenty of information for clients to make informed choices. 
