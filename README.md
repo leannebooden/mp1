@@ -265,8 +265,7 @@ One remaining bug identified, small amount of whitespace between accordions and 
 ### Performance
 
 Testing performance using Lighthouse within Google Chrome Developer Tools indicted high ratings for performance, accessibility, best practices and SEO.
-
-SCREENSHOT
+![Lighthouse Report](/assets/img/README/lighthouse-report.png)
 
 ### Security
 
