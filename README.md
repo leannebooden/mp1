@@ -272,6 +272,7 @@ One remaining bug identified, small amount of whitespace between accordions and 
 ### Performance
 
 Testing performance using Lighthouse within Google Chrome Developer Tools indicted high ratings for performance, accessibility, best practices and SEO.
+
 ![Lighthouse Report](/assets/img/README/lighthouse-report.png)
 
 ### Security
@@ -282,7 +283,9 @@ The security of the website was tested using the security section of Google Chro
 
 Ran code through The W3S Jigsaw CSS Validator. Initially, showed the following error when validating the CSS code:
 ![W3 Validator](/assets/img/README/w3-error.png)
+
 Fixed this error by removing the unecessary value and type attributes from the freetext element on the contact page. All pages returned with no errors. 
+
 ![W3 Validator Report](/assets/img/README/w3validator-report.png)
 
 ## Features Left to Implement
