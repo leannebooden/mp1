@@ -1,7 +1,7 @@
 # The Dice Goblins Dungeon
 
-![Live Project Mockup]
-LINK TO THE LIVE PROJECT - USE AMIRESPONSIVE FOR SCREENSHOTS
+![Live Project Mockup](/assets/img/README/amiresponsive.png)
+[LINK TO THE LIVE PROJECT](https://github.com/leannebooden-mp1-dice-goblins-dungeon)
 
 ## Table of Contents
 ---
@@ -38,7 +38,6 @@ LINK TO THE LIVE PROJECT - USE AMIRESPONSIVE FOR SCREENSHOTS
         - [Performance](#performance)
         - [Security](#security)
         - [W3S Jigsaw CSS Validator](#w3s-jigsaw-css-validator)
-        - [JSHint Validation](#jshint-validation)
     - [Features Left to Implement](#features-left-to-implement)
     - [Deployment](#deployment)
         - [GitHub Pages](#github-pages)
@@ -61,84 +60,7 @@ Within this document I will use the following abbreviations:
 - DM - Dungeon Master / Game Master
 
 
-LINK TO THE LIVE PROJECT
-
-## UX
----
-
-### User Stories
-
-| ID  | As a...          | I Want To Be Able To...                                     | So That I Can...                                            |
-| --- | ---------------- | ----------------------------------------------------------- | ----------------------------------------------------------- |
-| 01  | Potential Client | navigate the site quickly and efficiently.                  | identify the information I require about the service.       |
-| 02  | Potential Client | discover what campaigns the DM offers                       | decide if the DM offers stories that I am interested in.    |
-| 03  | Potential Client | easily contact the DM                                       | find out more information and register my interest.         |
-| 04  | Potential Client | read about the DM running the sessions and their game style | find out if their play style matches what I am looking for. |
-| 05  | Potential Client | see that the DM has wellbeing as a priority                 | feel safe playing in a game hosted by them.                 |
-# The Dice Goblins Dungeon
-
-![Live Project Mockup]
-LINK TO THE LIVE PROJECT - USE AMIRESPONSIVE FOR SCREENSHOTS
-
-## Table of Contents
----
-**The Dice Goblins Dungeon**
-- [Table of Contents](#the-dice-goblins-dungeon)
-    - [Introduction](#introduction)
-    - [UX](#ux)
-        - [User Stories](#user-stories)
-    - [Planning](#planning)
-        - [Overview](#overview)
-        - [Color Scheme](#color-scheme)
-        - [Font](#font)
-        - [Mock-ups](#mock-ups)
-            - [Desktop](#desktop)
-            - [Phone & Tablet](#phone--tablet)
-    - [Features](#features)
-        - [Navigation Bar](#navigation-bar)
-        - [Home Page](#home-page)
-            - [Hero Image](#hero-image)
-            - [Welcome](#welcome)
-            - [What is D&D?](#what-is-dd)
-        - [About Me Page](#about-me-page)
-            - [DM Style](#dm-style)
-            - [Session 0](#session-0)
-        - [Services Page](#services-page)
-            - [Campaign Information](#campaign-information)
-            - [Character Building](#character-building)
-        - [Contact Page](#contact-page)
-            - [Modal Pop-up](#modal-popup)
-        - [Footer](#footer)
-    - [Testing](#testing)
-        - [Bug Fixes](#bug-fixes)
-        - [Remaining Bugs](#remaining-bugs)
-        - [Performance](#performance)
-        - [Security](#security)
-        - [W3S Jigsaw CSS Validator](#w3s-jigsaw-css-validator)
-        - [JSHint Validation](#jshint-validation)
-    - [Features Left to Implement](#features-left-to-implement)
-    - [Deployment](#deployment)
-        - [GitHub Pages](#github-pages)
-        - [Forking the GitHub Repository](#forking-the-github-repository)
-     - [Credits](#credits)
-        - [Code](#credits)
-        - [Content](#content)
-        - [Media](#media)
-        - [Other](#other)
-
-## Introduction
----
-
-The Dice Goblins Dungeon offers private Dungeon Master services (Game Master). This is a small business that runs Dungeons & Dragons games for clients online. The purpose of the site is to provide detailed information on the settings of the games and let potential clients know all about the Dungeon Master. A key goal is to sell both the games themselves, and the person running them.
-
-The website includes an overview of the services offered, an about me section which provides details on the company owner who runs the sessions and a contact form. 
-
-Within this document I will use the following abbreviations:
-- D&D - Dungeons & Dragons
-- DM - Dungeon Master / Game Master
-
-
-LINK TO THE LIVE PROJECT
+[Link to the live page](https://github.com/leannebooden-mp1-dice-goblins-dungeon)
 
 ## UX
 ---
@@ -180,7 +102,7 @@ Many of these goals align closely with the user stories identified earlier. The 
 
 As the site is for a fantasy game that revolves around exploration, we wanted the site to reflect this. An earthy color scheme was chosen to give the user the feel of being in a forest. Earth tones are generally considered to be friendly and inviting which is a good fit for the site. We used the following color palette:
 
-![Color Palette](assets/img/README/color-palette.webp "color palette")
+![Color Palette](assets/img/README/color-palette.webp)
 
 Earth tones are complimented well with orange and red tones according to color theory, so these were the types of colors chosen for the other images on the site such as the banner at the top of the page on all pages except the index page. An off-white color was chosen for the text as it stood out well against the earthy background tones without being too harsh. 
 
@@ -257,12 +179,17 @@ This section discusses what a player can expect from a session 0. A session 0 is
 ### Services Page
 
 The introduction to the services follows the color theme already established and provides a summary of the services offered. There are clickable links to the campaigns allowing quicker navigation of the page.  There is also a link to the contact page within each section to further improve navigation. 
+![Services Screenshot](/assets/img/README/services-screenshot.png)
 
 #### Campaign Information 
 
 There are three sections that have an image alongside the text to further illustrate the theme of each campaign. The text alongside each section goes into more detail about each setting. This is the heart of the service being provided so it is vital information. The sections have bullet points lists at the top, providing some key information such as the genre so clients can quickly see which sections are of interest to them. There is then a more detailed introduction to each of the campaigns below.
 
 On mobile view, the services layout is changed. An accordion is used to save screen space on these devices. 
+
+#### Character Building
+
+This section summaries the character building services offered. As this is a secondary service, this is displayed at the last section on the page to give priority to the more key elements. 
 
 ### Contact Page
 
@@ -281,8 +208,6 @@ Features the logo and site name which link to the "Home" page. In the center the
 On mobile devices, the site name is removed to save space on the footer and reduce cluttering.
 
 ![Footer Bar](/assets/img/README/footer-bar.webp)
-
-SCREENSHOT
 
 ## Testing
 ---
@@ -332,6 +257,9 @@ Bug: The section headers were appearing next to the content rather than on top o
 Solve: I added a flex-direction: column; to the container.
 ### Remaining Bugs 
 
+One remaining bug identified, small amount of whitespace between accordions and images on small screens.
+
+![Known Bug](/assets/img/README/known-bug-1.png)
 
 ### Performance
 
@@ -341,13 +269,14 @@ SCREENSHOT
 
 ### Security
 
-The security of the website was tested using the security section of Google Chrome Developer tools:
-
-SCREENSHOT
+The security of the website was tested using the security section of Google Chrome Developer tools.
 
 #### W3S Jigsaw CSS Validator
 
-#### JSHint Validation
+Ran code through The W3S Jigsaw CSS Validator. Initially, showed the following error when validating the CSS code:
+![W3 Validator](/assets/img/README/w3-error.png)
+Fixed this error by removing the unecessary value and type attributes from the freetext element on the contact page. All pages returned with no errors. 
+![W3 Validator Report](/assets/img/README/w3validator-report.png)
 
 ## Features Left to Implement
 ---
@@ -355,7 +284,7 @@ SCREENSHOT
 The following are features that will be implemented in the future but were beyond the scope of this particular project:
 
 * A section on the home page with details of new campaigns the DM is running to appeal to returning clients. 
-* The Contact form at present is submitted to a default page with Code Institute. In future, this would connect with the DM's email address instead.
+* The Contact form information at present does not go anywhere. In future, this would connect with the DM's email address instead.
 * The social media links at present only link to the main pages of the sites, in future this will instead be linked to the pages of the company
 * The logo will be changed as the company owner is still designing this. A placeholder logo that was deemed appropriate was used for this project.
 * Another page would be added to include the table rules and cancellation policy 
@@ -490,7 +419,7 @@ The project was deployed to GitHub Pages. The following steps are used to deploy
 * Navigate to the settings tab and select the 'Pages' tab from the menu.
 * Under 'Source' click the dropdown labelled 'None' and select the 'master' branch.
 * Click save. The page will automatically refresh and the published site link can be found on the 'Pages' tab.
-* The link can be found here - (link to live site)
+* The link can be found here - [Link to the live page](https://github.com/leannebooden-mp1-dice-goblins-dungeon)
 
 ### Forking the GitHub Repository
 
@@ -519,37 +448,18 @@ I want to give thanks to the following people who have aided in some way with th
 - Tutors from Code Institute for help and guidance
 
 ### Code
+
 - [Stack Overflow](https://stackoverflow.com/questions/66335238/changing-the-color-arrow-in-bootstrap) - Used a section of code to change the color of the dropdown arrows on the accordion
+- [Chat GPT](https://en.wikipedia.org/wiki/ChatGPT) - Used for a section of Javascript code to load the modal pop-up after the page reload.
 ### Content
+
 * [Font Awesome](https://fontawesome.com/) - for the social media icons and arrows
 * [Google Fonts](https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap) - Roboto and Caveat
 ### Media
+
 - [Pixabay](https://pixabay.com/) - used for copyright free images
 - [Pexels](https://www.pexels.com/) - used for copyright free images
 
 ### Other
 
 * [Ami I Responsive?](https://ui.dev/amiresponsive) Testing the Responsive design of the Website.
-
-* [The Responsinator](http://www.responsinator.com/)
-
-I want to give thanks to the following people who have aided in some way with this project:
-- Excellence Ilesanmi - mentor
-- Manuel Perez Romero - tutor
-- Slack Users: Sherry, Luke, Kera, Jaimie, Sasan & Mike for answering questions I had and providing valuable insight.
-- Tutors from Code Institute for help and guidance
-
-### Code
-- [Stack Overflow](https://stackoverflow.com/questions/66335238/changing-the-color-arrow-in-bootstrap) - Used a section of code to change the color of the dropdown arrows on the accordion
-### Content
-* [Font Awesome](https://fontawesome.com/) - for the social media icons and arrows
-* [Google Fonts](https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap) - Roboto and Caveat
-### Media
-- [Pixabay](https://pixabay.com/) - used for copyright free images
-- [Pexels](https://www.pexels.com/) - used for copyright free images
-
-### Other
-
-* [Ami I Responsive?](https://ui.dev/amiresponsive) Testing the Responsive design of the Website.
-
-* [The Responsinator](http://www.responsinator.com/)
