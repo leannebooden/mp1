@@ -282,12 +282,14 @@ The security of the website was tested using the security section of Google Chro
 
 #### W3S Jigsaw CSS Validator
 
-Ran code through The W3S Jigsaw CSS Validator. Initially, showed the following error when validating the CSS code:
+Ran code through The W3S Jigsaw HTML Validator. Initially, showed the following error when validating the code:
 ![W3 Validator](/assets/img/README/w3-error.png)
 
 Fixed this error by removing the unecessary value and type attributes from the freetext element on the contact page. All pages returned with no errors. 
 
 ![W3 Validator Report](/assets/img/README/w3validator-report.png)
+
+When testing the CSS code, no errors or warnings were returned. 
 
 ## Features Left to Implement
 ---
