@@ -75,6 +75,83 @@ LINK TO THE LIVE PROJECT
 | 03  | Potential Client | easily contact the DM                                       | find out more information and register my interest.         |
 | 04  | Potential Client | read about the DM running the sessions and their game style | find out if their play style matches what I am looking for. |
 | 05  | Potential Client | see that the DM has wellbeing as a priority                 | feel safe playing in a game hosted by them.                 |
+# The Dice Goblins Dungeon
+
+![Live Project Mockup]
+LINK TO THE LIVE PROJECT - USE AMIRESPONSIVE FOR SCREENSHOTS
+
+## Table of Contents
+---
+**The Dice Goblins Dungeon**
+- [Table of Contents](#the-dice-goblins-dungeon)
+    - [Introduction](#introduction)
+    - [UX](#ux)
+        - [User Stories](#user-stories)
+    - [Planning](#planning)
+        - [Overview](#overview)
+        - [Color Scheme](#color-scheme)
+        - [Font](#font)
+        - [Mock-ups](#mock-ups)
+            - [Desktop](#desktop)
+            - [Phone & Tablet](#phone--tablet)
+    - [Features](#features)
+        - [Navigation Bar](#navigation-bar)
+        - [Home Page](#home-page)
+            - [Hero Image](#hero-image)
+            - [Welcome](#welcome)
+            - [What is D&D?](#what-is-dd)
+        - [About Me Page](#about-me-page)
+            - [DM Style](#dm-style)
+            - [Session 0](#session-0)
+        - [Services Page](#services-page)
+            - [Campaign Information](#campaign-information)
+            - [Character Building](#character-building)
+        - [Contact Page](#contact-page)
+            - [Modal Pop-up](#modal-popup)
+        - [Footer](#footer)
+    - [Testing](#testing)
+        - [Bug Fixes](#bug-fixes)
+        - [Remaining Bugs](#remaining-bugs)
+        - [Performance](#performance)
+        - [Security](#security)
+        - [W3S Jigsaw CSS Validator](#w3s-jigsaw-css-validator)
+        - [JSHint Validation](#jshint-validation)
+    - [Features Left to Implement](#features-left-to-implement)
+    - [Deployment](#deployment)
+        - [GitHub Pages](#github-pages)
+        - [Forking the GitHub Repository](#forking-the-github-repository)
+     - [Credits](#credits)
+        - [Code](#credits)
+        - [Content](#content)
+        - [Media](#media)
+        - [Other](#other)
+
+## Introduction
+---
+
+The Dice Goblins Dungeon offers private Dungeon Master services (Game Master). This is a small business that runs Dungeons & Dragons games for clients online. The purpose of the site is to provide detailed information on the settings of the games and let potential clients know all about the Dungeon Master. A key goal is to sell both the games themselves, and the person running them.
+
+The website includes an overview of the services offered, an about me section which provides details on the company owner who runs the sessions and a contact form. 
+
+Within this document I will use the following abbreviations:
+- D&D - Dungeons & Dragons
+- DM - Dungeon Master / Game Master
+
+
+LINK TO THE LIVE PROJECT
+
+## UX
+---
+
+### User Stories
+
+| ID  | As a...          | I Want To Be Able To...                                     | So That I Can...                                            |
+| --- | ---------------- | ----------------------------------------------------------- | ----------------------------------------------------------- |
+| 01  | Potential Client | navigate the site quickly and efficiently.                  | identify the information I require about the service.       |
+| 02  | Potential Client | discover what campaigns the DM offers                       | decide if the DM offers stories that I am interested in.    |
+| 03  | Potential Client | easily contact the DM                                       | find out more information and register my interest.         |
+| 04  | Potential Client | read about the DM running the sessions and their game style | find out if their play style matches what I am looking for. |
+| 05  | Potential Client | see that the DM has wellbeing as a priority                 | feel safe playing in a game hosted by them.                 |
 
 ## Planning
 ---
@@ -330,6 +407,52 @@ The following are features that will be implemented in the future but were beyon
 * [Figma](https://www.figma.com/) has been used to create the site mock-ups
 * [ChatGPT](https://en.wikipedia.org/wiki/ChatGPT) used to generate a logo base design
 * [Coolors](https://coolors.co/) used to find a suitable color palette
+---
+
+- [VS Code](https://en.wikipedia.org/wiki/Visual_Studio_Code)
+
+    Code Editor
+
+![VS Code](/assets/img/README/vscode-logo.webp)
+
+
+- [GitHub](https://github.com/)
+
+    Code Repository and Deployment
+
+![GitHub](/assets/img/README/github-logo.webp)
+
+- [git](https://www.git-scm.com/)
+
+    Version Control and Deployment
+
+![git](/assets/img/README/git-logo.webp)
+
+### Languages Used
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+
+![HTML5](/assets/img/README/html5-logo.webp)
+
+- [CSS3](https://en.wikipedia.org/wiki/CSS)
+
+![CSS3](/assets/img/README/css3-logo.webp)
+
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
+![JavaScript](/assets/img/README/javascript-logo.webp)
+
+### Frameworks, Libraries & Programs Used
+
+* [The W3C Markup Validator](https://validator.w3.org/#validate_by_input) has been used to validate the html code.
+* [The W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) has been used to validate the CSS code.
+* [JShint](https://jshint.com/) has been used to validate the JavaScript code.
+* [Bootstrap](https://getbootstrap.com/) V5 has been used for the navigation bar, the footer, the accordions on the services page and the modal pop-up on the contact page.
+* [Procreate](https://procreate.com/) has been used to draw the vines art in the header and edit the site logo
+* [befunky](https://www.befunky.com/) has been used to edit the images
+* [Figma](https://www.figma.com/) has been used to create the site mock-ups
+* [ChatGPT](https://en.wikipedia.org/wiki/ChatGPT) used to generate a logo base design
+* [Coolors](https://coolors.co/) used to find a suitable color palette
 
 ## Deployment
 
@@ -360,7 +483,55 @@ The following steps can be used to clone the GitHub repository:
 * Type git clone and paste the copied URL.
 * Press 'Enter' to create the clone.
 
+### GitHub Pages
+
+The project was deployed to GitHub Pages. The following steps are used to deploy the site:
+* Navigate to GitHub and locate and select the GitHub repository.
+* Navigate to the settings tab and select the 'Pages' tab from the menu.
+* Under 'Source' click the dropdown labelled 'None' and select the 'master' branch.
+* Click save. The page will automatically refresh and the published site link can be found on the 'Pages' tab.
+* The link can be found here - (link to live site)
+
+### Forking the GitHub Repository
+
+The following steps can be used to fork the GitHub repository:
+* On GitHub navigate to the main page of the repository.
+* The 'Fork' button can be found on the top righthand side of the screen.
+* Click the button to create a copy of the original repository.
+
+### Cloning the GitHub Repository
+
+The following steps can be used to clone the GitHub repository:
+* On GitHub navigate to the main page of the repository.
+* Above the list of files select 'Code'.
+* Three options are provided, HTTPS, SSH and GitHub CLI. Select the appropriate option and click the 'Copy' button next to the URL.
+* Open Git Bash.
+* Change the working directory to the location for the cloned directory.
+* Type git clone and paste the copied URL.
+* Press 'Enter' to create the clone.
+
 ## Credits
+
+I want to give thanks to the following people who have aided in some way with this project:
+- Excellence Ilesanmi - mentor
+- Manuel Perez Romero - tutor
+- Slack Users: Sherry, Luke, Kera, Jaimie, Sasan & Mike for answering questions I had and providing valuable insight.
+- Tutors from Code Institute for help and guidance
+
+### Code
+- [Stack Overflow](https://stackoverflow.com/questions/66335238/changing-the-color-arrow-in-bootstrap) - Used a section of code to change the color of the dropdown arrows on the accordion
+### Content
+* [Font Awesome](https://fontawesome.com/) - for the social media icons and arrows
+* [Google Fonts](https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap) - Roboto and Caveat
+### Media
+- [Pixabay](https://pixabay.com/) - used for copyright free images
+- [Pexels](https://www.pexels.com/) - used for copyright free images
+
+### Other
+
+* [Ami I Responsive?](https://ui.dev/amiresponsive) Testing the Responsive design of the Website.
+
+* [The Responsinator](http://www.responsinator.com/)
 
 I want to give thanks to the following people who have aided in some way with this project:
 - Excellence Ilesanmi - mentor
