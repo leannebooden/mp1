@@ -441,6 +441,11 @@ button {
     margin-left: 9px;
 }
 
+input[type=radio] {
+    width: 18px;
+    height: 18px;
+}
+
 #freetext {
     width: 70%;
     height: 300px;
