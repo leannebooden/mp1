@@ -1,6 +1,7 @@
 # The Dice Goblins Dungeon
 
 ![Live Project Mockup](/assets/img/README/amiresponsive.png)
+
 [LINK TO THE LIVE PROJECT](https://leannebooden.github.io/mp1-dice-goblins-dungeon/)
 
 ## Table of Contents
@@ -346,52 +347,6 @@ The following are features that will be implemented in the future but were beyon
 * [Figma](https://www.figma.com/) has been used to create the site mock-ups
 * [ChatGPT](https://en.wikipedia.org/wiki/ChatGPT) used to generate a logo base design
 * [Coolors](https://coolors.co/) used to find a suitable color palette
----
-
-- [VS Code](https://en.wikipedia.org/wiki/Visual_Studio_Code)
-
-    Code Editor
-
-![VS Code](/assets/img/README/vscode-logo.webp)
-
-
-- [GitHub](https://github.com/)
-
-    Code Repository and Deployment
-
-![GitHub](/assets/img/README/github-logo.webp)
-
-- [git](https://www.git-scm.com/)
-
-    Version Control and Deployment
-
-![git](/assets/img/README/git-logo.webp)
-
-### Languages Used
-
-- [HTML5](https://en.wikipedia.org/wiki/HTML5)
-
-![HTML5](/assets/img/README/html5-logo.webp)
-
-- [CSS3](https://en.wikipedia.org/wiki/CSS)
-
-![CSS3](/assets/img/README/css3-logo.webp)
-
-- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
-
-![JavaScript](/assets/img/README/javascript-logo.webp)
-
-### Frameworks, Libraries & Programs Used
-
-* [The W3C Markup Validator](https://validator.w3.org/#validate_by_input) has been used to validate the html code.
-* [The W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) has been used to validate the CSS code.
-* [JShint](https://jshint.com/) has been used to validate the JavaScript code.
-* [Bootstrap](https://getbootstrap.com/) V5 has been used for the navigation bar, the footer, the accordions on the services page and the modal pop-up on the contact page.
-* [Procreate](https://procreate.com/) has been used to draw the vines art in the header and edit the site logo
-* [befunky](https://www.befunky.com/) has been used to edit the images
-* [Figma](https://www.figma.com/) has been used to create the site mock-ups
-* [ChatGPT](https://en.wikipedia.org/wiki/ChatGPT) used to generate a logo base design
-* [Coolors](https://coolors.co/) used to find a suitable color palette
 
 ## Deployment
 
@@ -403,33 +358,6 @@ The project was deployed to GitHub Pages. The following steps are used to deploy
 * Under 'Source' click the dropdown labelled 'None' and select the 'master' branch.
 * Click save. The page will automatically refresh and the published site link can be found on the 'Pages' tab.
 * The link can be found here - (link to live site)
-
-### Forking the GitHub Repository
-
-The following steps can be used to fork the GitHub repository:
-* On GitHub navigate to the main page of the repository.
-* The 'Fork' button can be found on the top righthand side of the screen.
-* Click the button to create a copy of the original repository.
-
-### Cloning the GitHub Repository
-
-The following steps can be used to clone the GitHub repository:
-* On GitHub navigate to the main page of the repository.
-* Above the list of files select 'Code'.
-* Three options are provided, HTTPS, SSH and GitHub CLI. Select the appropriate option and click the 'Copy' button next to the URL.
-* Open Git Bash.
-* Change the working directory to the location for the cloned directory.
-* Type git clone and paste the copied URL.
-* Press 'Enter' to create the clone.
-
-### GitHub Pages
-
-The project was deployed to GitHub Pages. The following steps are used to deploy the site:
-* Navigate to GitHub and locate and select the GitHub repository.
-* Navigate to the settings tab and select the 'Pages' tab from the menu.
-* Under 'Source' click the dropdown labelled 'None' and select the 'master' branch.
-* Click save. The page will automatically refresh and the published site link can be found on the 'Pages' tab.
-* The link can be found here - [Link to the live page](https://leannebooden.github.io/mp1-dice-goblins-dungeon/)
 
 ### Forking the GitHub Repository
 
